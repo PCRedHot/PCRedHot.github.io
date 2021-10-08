@@ -1,0 +1,177 @@
+[
+  {
+    "abbv": "UL",
+    "name": "University Lodge"
+    "area": "A"
+  },
+  {
+    "abbv": "RBC",
+    "name": "Robert Black College"
+    "area": "A"
+  },
+  {
+    "abbv": "GH",
+    "name": "Graduate House"
+    "area": "A"
+  },
+  {
+    "abbv": "MH",
+    "name": "May Hall"
+    "area": "A"
+  },
+  {
+    "abbv": "MW",
+    "name": "Meng Wah Complex Building"
+    "area": "A"
+  },
+  {
+    "abbv": "EH",
+    "name": "Eliot Hall"
+    "area": "A"
+  },
+  {
+    "abbv": "RM",
+    "name": "Runme Shaw Building"
+    "area": "B"
+  },
+  {
+    "abbv": "RR",
+    "name": "Run Run Shaw Building"
+    "area": "B"
+  },
+  {
+    "abbv": "JL",
+    "name": "James Hsioung Lee Science Building"
+    "area": "B"
+  },
+  {
+    "abbv": "CYA",
+    "name": "Chong Yuet Ming Amenities Centre"
+    "area": "A"
+  },
+  {
+    "abbv": "RH",
+    "name": "Rayson Huang Theatre"
+    "area": "B"
+  },
+  {
+    "abbv": "HC",
+    "name": "Hui Oi Chow Science Building"
+    "area": "B"
+  },
+  {
+    "abbv": "HW",
+    "name": "Haking Wong Building"
+    "area": "B"
+  },
+  {
+    "abbv": "SLH",
+    "name": "Simon K.Y. Lee Hall"
+    "area": "C"
+  },
+  {
+    "abbv": "COB",
+    "name": "Composite Building"
+    "area": "C"
+  },
+  {
+    "abbv": "CB",
+    "name": "Chow Yei Ching Building"
+    "area": "C"
+  },
+  {
+    "abbv": "CYC",
+    "name": "Chong Yuet Ming Chemistry Building"
+    "area": "A"
+  },
+  {
+    "abbv": "CYP",
+    "name": "Chong Yuet Ming Physics Building"
+    "area": "A"
+  },
+  {
+    "abbv": "CCT",
+    "name": "Cheng Yu Tung Tower (Law)"
+    "area": "C"
+  },
+  {
+    "abbv": "CRT",
+    "name": "Run Run Shaw Tower (Arts)"
+    "area": "C"
+  },
+  {
+    "abbv": "CJT",
+    "name": "The Jockey Club Tower (Social Sciences)"
+    "area": "C"
+  },
+  {
+    "abbv": "TC",
+    "name": "Tang Chi Ngong Building"
+    "area": "A"
+  },
+  {
+    "abbv": "SWH",
+    "name": "Swire Hall"
+    "area": "A"
+  },
+  {
+    "abbv": "FS",
+    "name": "Fong Shu Chuen Amenities Centre"
+    "area": "A"
+  },
+  {
+    "abbv": "KK",
+    "name": "K.K. Leung Building"
+    "area": "A"
+  },
+  {
+    "abbv": "KB",
+    "name": "Knowles Building"
+    "area": "B"
+  },
+  {
+    "abbv": "LBO Main",
+    "name": "Library Building (Old Wing)"
+    "area": "B"
+  },
+  {
+    "abbv": "LBN",
+    "name": "Library Building (New Wing)"
+    "area": "B"
+  },
+  {
+    "abbv": "KBS",
+    "name": "Kadoorie Biological Sciences Building"
+    "area": "B"
+  },
+  {
+    "abbv": "TT",
+    "name": "T.T. Tsui Building"
+    "area": "A"
+  },
+  {
+    "abbv": "FP",
+    "name": "Fung Ping Shan Building"
+    "area": "A"
+  },
+  {
+    "abbv": "MB",
+    "name": "Main Building"
+    "area": "B"
+  },
+  {
+    "abbv": "HH",
+    "name": "Hung Hing Ying Building"
+    "area": "B"
+  },
+  {
+    "abbv": "PS",
+    "name": "Pao Siu Loong Building"
+    "area": "B"
+  },
+  {
+    "abbv": "YP",
+    "name": "Yam Pak Building"
+    "area": "C"
+  },
+]
