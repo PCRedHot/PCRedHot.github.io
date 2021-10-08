@@ -2,176 +2,246 @@
   {
     "abbv": "CB",
     "name": "Chow Yei Ching Building",
-    "area": "C"
+    "area": "C",
+    "latitude": "22.28311055530001",
+    "longitude": "114.13539875319627"
   },
   {
     "abbv": "CCT",
     "name": "Cheng Yu Tung Tower (Law)",
-    "area": "C"
+    "area": "C",
+    "latitude": "22.283351845003782",
+    "longitude": "114.13353668087322"
   },
   {
     "abbv": "CJT",
     "name": "The Jockey Club Tower (Social Sciences)",
-    "area": "C"
+    "area": "C",
+    "latitude": "22.283334361988818",
+    "longitude": "114.13463206376844"
   },
   {
     "abbv": "COB",
     "name": "Composite Building",
-    "area": "C"
+    "area": "C",
+    "latitude": "22.283161481025648",
+    "longitude": "114.13580605876197"
   },
   {
     "abbv": "CRT",
     "name": "Run Run Shaw Tower (Arts)",
-    "area": "C"
+    "area": "C",
+    "latitude": "22.283697555701757",
+    "longitude": "114.13444803946557"
   },
   {
     "abbv": "CYA",
     "name": "Chong Yuet Ming Amenities Centre",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28283097279656",
+    "longitude": "114.13886491284543"
   },
   {
     "abbv": "CYC",
     "name": "Chong Yuet Ming Chemistry Building",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.283151837876524",
+    "longitude": "114.14005875538714"
   },
   {
     "abbv": "CYP",
     "name": "Chong Yuet Ming Physics Building",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.283258451023904",
+    "longitude": "114.13985261305746"
   },
   {
     "abbv": "EH",
     "name": "Eliot Hall",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28268100021693",
+    "longitude": "114.13976398422237"
   },
   {
     "abbv": "FP",
     "name": "Fung Ping Shan Building",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.283628159015286",
+    "longitude": "114.13909293158756"
   },
   {
     "abbv": "FS",
     "name": "Fong Shu Chuen Amenities Centre",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.283785636966957",
+    "longitude": "114.13964868201539"
   },
   {
     "abbv": "GH",
     "name": "Graduate House",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28210229281935",
+    "longitude": "114.1374764188903"
   },
   {
     "abbv": "HC",
     "name": "Hui Oi Chow Science Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.282785381350305",
+    "longitude": "114.13754437910904"
   },
   {
     "abbv": "HH",
     "name": "Hung Hing Ying Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.28461826910128",
+    "longitude": "114.1378271831564"
   },
   {
     "abbv": "HW",
     "name": "Haking Wong Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.28305997263395",
+    "longitude": "114.13673182818604"
   },
   {
     "abbv": "JL",
     "name": "James Hsioung Lee Science Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.282555306989188",
+    "longitude": "114.13753810794424"
   },
   {
     "abbv": "KB",
     "name": "Knowles Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.28329958284945",
+    "longitude": "114.13847594643296"
   },
   {
     "abbv": "KBS",
     "name": "Kadoorie Biological Sciences Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.283686819907746",
+    "longitude": "114.13711098422253"
   },
   {
     "abbv": "KK",
     "name": "K.K. Leung Building",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28334261044261",
+    "longitude": "114.13909329305932"
   },
   {
     "abbv": "LBN",
     "name": "Library Building (New Wing)",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.283249809595343",
+    "longitude": "114.1377434651627"
   },
   {
     "abbv": "LBO Main",
     "name": "Library Building (Old Wing)",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.28311994408592",
+    "longitude": "114.13791386577275"
   },
   {
     "abbv": "MB",
     "name": "Main Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.28401299551971",
+    "longitude": "114.13784422116503"
   },
   {
     "abbv": "MH",
     "name": "May Hall",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.282478183471063",
+    "longitude": "114.13983542655197"
   },
   {
     "abbv": "MW",
     "name": "Meng Wah Complex Building",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.282506128079905",
+    "longitude": "114.13916704189266"
   },
   {
     "abbv": "PS",
     "name": "Pao Siu Loong Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.28460157307542",
+    "longitude": "114.13751931289985"
   },
   {
     "abbv": "RBC",
     "name": "Robert Black College",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.281882968927626",
+    "longitude": "114.13915477330866"
   },
   {
     "abbv": "RH",
     "name": "Rayson Huang Theatre",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.282631983599025",
+    "longitude": "114.13833579935094"
   },
   {
     "abbv": "RM",
     "name": "Runme Shaw Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.28264911725549",
+    "longitude": "114.13850445538726"
   },
   {
     "abbv": "RR",
     "name": "Run Run Shaw Building",
-    "area": "B"
+    "area": "B",
+    "latitude": "22.282577901039968",
+    "longitude": "114.13803331737763"
   },
   {
     "abbv": "SLH",
     "name": "Simon K.Y. Lee Hall",
-    "area": "C"
+    "area": "C",
+    "latitude": "22.283133344953953",
+    "longitude": "114.13588790609825"
   },
   {
     "abbv": "SWH",
     "name": "Swire Hall",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28389245503628",
+    "longitude": "114.13975406424024"
   },
   {
     "abbv": "TC",
     "name": "Tang Chi Ngong Building",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28359034111098",
+    "longitude": "114.13997638485183"
   },
   {
     "abbv": "TT",
     "name": "T.T. Tsui Building",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28389600587269",
+    "longitude": "114.13940354085365"
   },
   {
     "abbv": "UL",
     "name": "University Lodge",
-    "area": "A"
+    "area": "A",
+    "latitude": "22.28155734855302",
+    "longitude": "114.14007092781901"
   },
   {
     "abbv": "YP",
     "name": "Yam Pak Building",
-    "area": "C"
+    "area": "C",
+    "latitude": "22.284087266632174",
+    "longitude": "114.13543552692289"
   }
 ]
