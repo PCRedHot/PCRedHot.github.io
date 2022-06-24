@@ -1,4 +1,4 @@
-window.open('tel:00000000');
+window.open('tel://+85200000000');
 
 function setup(){
 
