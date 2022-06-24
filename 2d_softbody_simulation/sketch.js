@@ -428,8 +428,8 @@ const SPRING_KD = 0.00001;
 
 const VELCOITY_LOSS = 0.005;
 
-const COLLISION_VELOCITY_LOSS = 0.2;
-const INTERNAL_COLLISION_VELOCITY_LOSS = 0.6;
+const COLLISION_VELOCITY_LOSS = 0.1;
+const INTERNAL_COLLISION_VELOCITY_LOSS = 0.3;
 
 const MAX_VELOCITY = 5;
 const MAX_FORCE = 100;
@@ -531,9 +531,16 @@ function draw(){
 
 	// Draw points created
 	if (user_mode === MODE_CREATE) {
-		strokeWeight(5);
 		stroke(0);
-		clicked_points.forEach((pt) => point(pt.x, pt.y));
+		clicked_points.forEach((pt, i) => {
+			strokeWeight(5);
+			point(pt.x, pt.y);
+			if (i > 0) {
+				const last_pt = clicked_points[i-1];
+				strokeWeight(2);
+				line(last_pt.x, last_pt.y, pt.x, pt.y);
+			}
+		});
 	}
 
 	softbody.draw();
