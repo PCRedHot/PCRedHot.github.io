@@ -14,15 +14,15 @@ class Page {
         if (this.page_index > 0) this.page_index -= 1;
     }
 
-    constructor(text, bg_color, font, page_width, page_height) {
+    constructor(text, bg_color, font, page_width, page_height, onInputCallback) {
         this.text = text;
         this.bg_color = bg_color;
         this.width = page_width;
         this.height = page_height;
-
         this.font = font;
 
         this.animation_count = ANIMATION_COUNT_MAX;     // -100 to 100, 0 -> center
+        this.done = false;                              // set to true to disable input callback
         
         this.setTextParam();
     }
@@ -32,7 +32,7 @@ class Page {
         // console.log(this.font);
         let bounding_box = this.font.textBounds(this.text, 0, 0, cur_font_size);
 
-        while (bounding_box.w < this.width * 4/5 && bounding_box.h < this.height / 4) {
+        while (bounding_box.w < this.width * 5/7 && bounding_box.h < this.height / 4) {
             cur_font_size += 10;
             bounding_box = this.font.textBounds(this.text, 0, 0, cur_font_size);
         }
@@ -58,9 +58,11 @@ class Page {
 
         let amount = max(1 - Math.pow(1 - Math.abs(this.animation_count-target_animation_count)/ANIMATION_COUNT_MAX/2, 3)*ANIMATION_COUNT_MAX*2, 1);
         if (amount > Math.abs(this.animation_count-target_animation_count)) this.animation_count = target_animation_count;
-        else this.animation_count = this.animation_count > target_animation_count ? this.animation_count - amount : this.animation_count + amount;
+        else this.animation_count = this.animation_count > target_animation_count ? this.animation_count - amount : this.animation_count + amount;       
+    }
 
-        
+    onInputValue(v) {
+        if (!this.done && this.onInputCallback != null) this.onInputCallback(v);
     }
 
 }
