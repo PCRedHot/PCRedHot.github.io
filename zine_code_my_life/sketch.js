@@ -93,6 +93,8 @@ function mouseClicked() {
         if (mouseX < windowWidth/2) Page.prevPage();
         else Page.nextPage();
     }
+
+    interact_zone.addTextHistory("Click");
     
 }
 
