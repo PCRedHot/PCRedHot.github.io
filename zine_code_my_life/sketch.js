@@ -40,6 +40,8 @@ function preload() {
 function setup(){
     // Remove margin to canvas
     document.body.style.margin = '0px';
+
+    pixelDensity(1);
     
     // zone dimensions
     PAGE_WIDTH = windowWidth, PAGE_HEIGHT = windowHeight * 2 / 3;
