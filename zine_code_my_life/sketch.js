@@ -87,7 +87,7 @@ function draw(){
 }
 
 
-function mouseClicked() {
+function touchEnded() {
     // PREV / NEXT PAGE
     if (mouseY < PAGE_HEIGHT) {   
         if (mouseX < windowWidth/2) Page.prevPage();
