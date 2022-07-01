@@ -25,4 +25,5 @@ Color.fromGrayA = (gray, a) => {return new Color(gray, gray, gray, a);};
 
 COLOR_CODE_BACKGROUND = Color.fromGray(30);
 COLOR_CODE = Color.fromGray(204);
+COLOR_CODE_BONDARY = Color.fromGray(10);
 COLOR_WHITE_BACKGROUND = Color.fromGray(255);
