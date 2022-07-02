@@ -97,7 +97,7 @@ function touchEnded() {
     }
 
     // interact_zone.addTextHistory("Click");
-    return false;
+    // return false;
 }
 
 function keyPressed() {
