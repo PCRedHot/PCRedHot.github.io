@@ -24,6 +24,7 @@ let font_text = null,
 let PAGE_WIDTH, PAGE_HEIGHT, INTERACT_ZONE_WIDTH, INTERACT_ZONE_HEIGHT;
 
 
+let state = {}
 
 let pages = [];
 let interact_zone = null;
@@ -56,13 +57,6 @@ function setup(){
     background(...COLOR_WHITE_BACKGROUND.get());
 }
 
-function loadInitPages() {
-    pages.push(new Page('Hi', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
-    pages.push(new Page('我係Parry', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
-    pages.push(new Page('多謝你打開呢本書', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
-    pages.push(new Page('開始之前\n要比你知道\n你輸入既資料係唔會被儲存', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
-    pages.push(new Page('開始之前\n要比你知道\n你輸入既資料係唔會被儲存', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
-}
 
 function setupInputBox() {
     input_box = createInput("");
@@ -74,6 +68,7 @@ function setupInputBox() {
     input_box.style('border', '0');
     input_box.style('font-family', 'Consolas');
 }
+
 
 function draw(){
     // background(...COLOR_WHITE_BACKGROUND.get());

@@ -11,11 +11,7 @@ class InteractiveZone {
         this.font = font;
         this.font_chi = font_chi;
 
-        this.input_history = [
-            "TEST",
-            "中艾",
-            "中Eng"
-        ];
+        this.input_history = [];
     }
 
     addTextHistory(text) {

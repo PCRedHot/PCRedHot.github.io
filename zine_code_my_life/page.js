@@ -14,8 +14,9 @@ class Page {
         if (this.page_index > 0) this.page_index -= 1;
     }
 
-    constructor(text, bg_color, font, page_width, page_height, onInputCallback) {
+    constructor(text, bg_color, font, page_width, page_height) {
         this.text = text;
+        if (text == null) this.text = " ";
         this.bg_color = bg_color;
         this.width = page_width;
         this.height = page_height;
@@ -23,22 +24,26 @@ class Page {
 
         this.animation_count = ANIMATION_COUNT_MAX;     // -100 to 100, 0 -> center
         this.done = false;                              // set to true to disable input callback
+        this.onInputCallback = null;
         
-        this.setTextParam();
-    }
-
-    setTextParam() {
         let cur_font_size = 30;
         // console.log(this.font);
         let bounding_box = this.font.textBounds(this.text, 0, 0, cur_font_size);
 
-        while (bounding_box.w < this.width * 5/7 && bounding_box.h < this.height / 4) {
-            cur_font_size += 10;
+        while (bounding_box.w < this.width * 6/7 && bounding_box.h < this.height / 3) {
+            cur_font_size += 5;
             bounding_box = this.font.textBounds(this.text, 0, 0, cur_font_size);
         }
 
-        this.font_size = cur_font_size - 10;
+        this.font_size = cur_font_size - 5;
     }
+
+    setOnInputCallback(callback) {
+        this.onInputCallback = callback;
+
+        return this;
+    }
+
 
     draw(index) {
         push();
@@ -62,7 +67,7 @@ class Page {
     }
 
     onInputValue(v) {
-        if (!this.done && this.onInputCallback != null) this.onInputCallback(v);
+        if (!this.done && this.onInputCallback != null) this.onInputCallback(this, v);
     }
 
 }
