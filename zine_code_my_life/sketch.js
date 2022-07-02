@@ -60,11 +60,11 @@ function setup(){
 
 
 function setupInputBox() {
-    input_box = createInput("");
+    input_box = createInput("INPUT");
     input_box.position(100, windowHeight - 57);
     input_box.size(windowWidth - 120, INPUT_BOX_HEIGHT);
     input_box.style('font-size', '40px');
-    // input_box.style('background-color', COLOR_CODE_BACKGROUND.getHex());
+    input_box.style('background-color', COLOR_CODE_BACKGROUND.getHex());
     input_box.style('color', COLOR_CODE.getHex());
     input_box.style('border', '0');
     input_box.style('font-family', 'Consolas');
