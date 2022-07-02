@@ -49,9 +49,10 @@ function setup(){
     INTERACT_ZONE_WIDTH = windowWidth, INTERACT_ZONE_HEIGHT = windowHeight - PAGE_HEIGHT;
 
     loadInitPages();
-    setupInputBox();
     interact_zone = new InteractiveZone(INTERACT_ZONE_WIDTH, INTERACT_ZONE_HEIGHT, font_code, font_code_history);
+    setupInputBox();
 
+    
     // Around (980, 1700) 
     createCanvas(windowWidth, windowHeight);
     background(...COLOR_WHITE_BACKGROUND.get());
