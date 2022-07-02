@@ -69,7 +69,7 @@ function setupInputBox() {
     input_box.style('border', '0');
     input_box.style('font-family', 'Consolas');
 
-    input_box.removeAttribute('disabled');
+    // input_box.removeAttribute('disabled');
 }
 
 
@@ -107,8 +107,8 @@ function keyPressed() {
             interact_zone.addTextHistory(v);
             inputValue(v);
 
-            input_box.attribute('disabled', '');
-            input_box.removeAttribute('disabled');
+            // input_box.attribute('disabled', '');
+            // input_box.removeAttribute('disabled');
         }
         input_box.value('');
     }
