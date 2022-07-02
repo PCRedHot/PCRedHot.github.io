@@ -52,7 +52,7 @@ function setup(){
     interact_zone = new InteractiveZone(INTERACT_ZONE_WIDTH, INTERACT_ZONE_HEIGHT, font_code, font_code_history);
     setupInputBox();
 
-    
+
     // Around (980, 1700) 
     createCanvas(windowWidth, windowHeight);
     background(...COLOR_WHITE_BACKGROUND.get());
@@ -68,6 +68,8 @@ function setupInputBox() {
     input_box.style('color', COLOR_CODE.getHex());
     input_box.style('border', '0');
     input_box.style('font-family', 'Consolas');
+
+    input_box.removeAttribute('disabled');
 }
 
 
