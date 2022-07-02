@@ -68,6 +68,7 @@ function setupInputBox() {
     // input_box.style('color', COLOR_CODE.getHex());
     input_box.style('border', '0');
     input_box.style('font-family', 'Consolas');
+    input_box.style('type', 'text');
 
     // input_box.removeAttribute('disabled');
 }
@@ -96,7 +97,7 @@ function touchEnded() {
         else Page.nextPage();
     }
 
-    // interact_zone.addTextHistory("Click");
+    interact_zone.addTextHistory("Click");
     // return false;
 }
 
