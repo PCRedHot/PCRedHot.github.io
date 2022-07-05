@@ -1,6 +1,5 @@
 function loadInitPages() {
-    pages.push(new Page('Hi\n我係Parry', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
-    pages.push(new Page('多謝你打開呢本書', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
+    pages.push(new Page('Hi\n我係呢本書既作者 Parry', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
     pages.push(new Page('開始之前要比你知道\n你輸入既資料係\n*唔會*被伺服器儲存', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT));
     pages.push(
         new Page('所以可以放心\n明白就係下面輸入\"YES\"', COLOR_WHITE_BACKGROUND, font_text, PAGE_WIDTH, PAGE_HEIGHT)
@@ -37,6 +36,6 @@ function loadAskSpotify() {
 }
 
 function loadStartPages() {
-
+    pages.push(new Page(''))
 }
 
