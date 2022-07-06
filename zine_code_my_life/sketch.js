@@ -117,12 +117,11 @@ function keyPressed() {
         if (v.length > 0) {
             interact_zone.addTextHistory(v);
             inputValue(v);
-
-            // input_box.attribute('disabled', '');
-            // input_box.removeAttribute('disabled');
         }
         input_box.value('');
     }
+    input_box.attribute('disabled', '');
+    input_box.removeAttribute('disabled');
   }
 
 function inputValue(v) {
