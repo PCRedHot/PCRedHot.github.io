@@ -30,7 +30,7 @@ let pages = [];
 let interact_zone = null;
 
 let input_box = null;
-
+let curr_bg_color = COLOR_WHITE_BACKGROUND;
 
 function preload() {
     font_text = loadFont('./fonts/NotoSansHK-Medium.otf');
@@ -48,6 +48,10 @@ function setup(){
     PAGE_WIDTH = windowWidth, PAGE_HEIGHT = windowHeight * 5 / 7;
     INTERACT_ZONE_WIDTH = windowWidth, INTERACT_ZONE_HEIGHT = windowHeight - PAGE_HEIGHT;
 
+    Page.font = font_text;
+    Page.width = PAGE_WIDTH;
+    Page.height = PAGE_HEIGHT;
+
     loadInitPages();
     interact_zone = new InteractiveZone(INTERACT_ZONE_WIDTH, INTERACT_ZONE_HEIGHT, font_code, font_code_history);
     setupInputBox();
@@ -55,12 +59,13 @@ function setup(){
 
     // Around (980, 1700) 
     createCanvas(windowWidth, windowHeight);
-    background(...COLOR_WHITE_BACKGROUND.get());
+    background(...curr_bg_color.get());
+
 }
 
 
 function setupInputBox() {
-    input_box = createInput("INPUT");
+    input_box = createInput("");
     input_box.position(100, windowHeight - 57);
     input_box.size(windowWidth - 120, INPUT_BOX_HEIGHT);
     input_box.style('font-size', '40px');
@@ -73,9 +78,16 @@ function setupInputBox() {
 }
 
 
+
+
 function draw(){
     // background(...COLOR_WHITE_BACKGROUND.get());
-    background(255, 255, 255, 180);
+    // background(255, 255, 255, 180);
+    target_bg_color = pages[Page.page_index].bg_color;
+    curr_bg_color = Color.fromTransition(curr_bg_color, target_bg_color, 10);
+
+    
+    background(...curr_bg_color.get());
 
     push();
     pages.forEach((page, index) => page.draw(index));
@@ -96,7 +108,7 @@ function touchEnded() {
         else Page.nextPage();
     }
 
-    interact_zone.addTextHistory("Click");
+    // interact_zone.addTextHistory("Click");
     return false;
 }
 
