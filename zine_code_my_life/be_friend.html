@@ -1,0 +1,13 @@
+<script src="https://gist.github.com/PCRedHot/49c5d6464f3e440d0ee374b5744ebb0f.js"></script>
+<script src="./common.js"></script>
+
+<script type="module">
+    window.addEventListener('load', function () {
+        var found = searchByFunctionName("click_to_go_back");
+
+        found.addEventListener("click", () => {
+            window.location.href = '/index.html';
+        });
+
+    })
+</script>
