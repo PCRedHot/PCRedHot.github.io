@@ -1,0 +1,16 @@
+<script src="https://gist.github.com/PCRedHot/c8129775bc881e3e1a123a7bf83ebc83.js?file=food_tamjai.py"></script>
+<script src="./common.js"></script>
+
+<script type="module">
+    window.addEventListener('load', function () {
+        const spicy_function_name = ['click_non_spicy', 'click_10_mild_spicy', 'click_5_mild_spicy', 'click_4_mild_spicy', 'click_3_mild_spicy', 'click_2_mild_spicy', 'click_mild_spicy', 'click_moderate_spicy', 'click_hot_spicy', 'click_extra_hot_spicy', 'click_never_eat_tamjai']
+        
+        spicy_function_name.forEach((spicy_func, index) => {
+            var found = searchByFunctionName(spicy_func);
+            found.addEventListener("click", () => {
+                window.location.href = `/zine_code_my_life/food_durian.html?spicy=${index};
+            });
+        })
+        
+    })
+</script>

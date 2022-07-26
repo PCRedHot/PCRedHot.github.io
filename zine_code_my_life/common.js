@@ -4,15 +4,21 @@ window.addEventListener('load', function () {
 })
 
 function searchByFunctionName(searchText) {
-    const spanCollections = document.getElementsByTagName("span");
+    const tags = ['span']
+
     var found;
 
-    for (var i = 0; i < spanCollections.length; i++) {
-        if (spanCollections[i].textContent == searchText) {
-            found = spanCollections[i];
-            break;
+    tags.forEach(tag => {
+        if (found != null) return;
+
+        const collection =  document.getElementsByTagName(tag);
+        for (var i = 0; i < collection.length; i++) {
+            if (collection[i].textContent == searchText) {
+                found = collection[i];
+                break;
+            }
         }
-    }
+    })
 
     return found;
 }
