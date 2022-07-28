@@ -1,0 +1,30 @@
+<script src="https://gist.github.com/PCRedHot/c8129775bc881e3e1a123a7bf83ebc83.js?file=music.py"></script>
+<script src="./common.js"></script>
+
+<script type="module">
+    window.addEventListener('load', function () {
+        const song_list = [
+        '3gxA31iAdIxToSS1uysNWk', '6dV6E9x0YsmRweAB4QUPhd'
+        ]
+        var found = searchByFunctionName('click_to_listen_a_random_fav_song');
+        found.addEventListener("click", () => {
+            var elem = document.getElementById('spotify-song')
+            if (elem == null) {
+                var elem = document.createElement('div');
+                elem.id = 'spotify-song'
+                document.body.appendChild(elem);
+            }
+            
+            var song_id = song_list[Math.floor(Math.random()*song_list.length)];
+            elem.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/${song_id}?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`
+            
+        });
+        
+        var found = searchByFunctionName('click_to_proceed');
+        found.addEventListener("click", () => {
+            window.location.href = `/zine_code_my_life/be_friend.html`;
+        });
+
+        
+    })
+</script>

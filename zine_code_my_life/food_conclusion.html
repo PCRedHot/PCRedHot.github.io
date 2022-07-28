@@ -1,0 +1,49 @@
+<script src="https://gist.github.com/PCRedHot/c8129775bc881e3e1a123a7bf83ebc83.js?file=food_conclusion.py"></script>
+<script src="./common.js"></script>
+
+<script type="module">
+    window.addEventListener('load', function () {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+
+        const spicy_comments = [
+            'Oh no, you should really try try 10 mild',
+            '10 mild is actually good, but sometimes it feels no spicy lol',
+            '5 mild hi friend :)',
+            'The next tamjai I will try 4 mild',
+            'Is 3 mild spicy? :x',
+            '2 mild seems too much for me',
+            'For one time I don\'t know there are 4,3,2 mild, I directly jump to mild. I was dying :(',
+            'moderate is god to me already',
+            'hope you are ok, cuz I am definitely not ok with hot level',
+            'extra hot ... I want to see you eat that',
+            '... I should bring you to eat tamjai',
+        ]
+
+        var found = searchByFunctionName('# {message_tamjai}')
+        found.innerHTML = `# ${spicy_comments[params.spicy]}` 
+                
+        const durian_comments = [
+            'Yeah, let\'s don\'t touch durian :)',
+            'Actually I am good with durian side product, I just don\'t like the texture ><',
+        ]
+
+        var found = searchByFunctionName('# {message_durian}')
+        found.innerHTML = `# ${durian_comments[params.durian]}` 
+
+
+        const pizza_comments = [
+            'Oh no, I am a pizza alien to you. SOrRy (I am not)',
+            'Let\'s add more pineapples on pizza :)'
+        ]
+
+        var found = searchByFunctionName('# {message_pizza}')
+        found.innerHTML = `# ${pizza_comments[params.pizza]}` 
+        
+        var found = searchByFunctionName('click_to_proceed');
+        found.addEventListener("click", () => {
+            window.location.href = `/zine_code_my_life/music.html`;
+        });
+        
+    })
+</script>
