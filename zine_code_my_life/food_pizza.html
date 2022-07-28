@@ -1,0 +1,19 @@
+<script src="https://gist.github.com/PCRedHot/c8129775bc881e3e1a123a7bf83ebc83.js?file=food_pizza.py"></script>
+<script src="./common.js"></script>
+
+<script type="module">
+    window.addEventListener('load', function () {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+
+        const pizza_function_name = ['click_italian', 'click_pineapple']
+        
+        pizza_function_name.forEach((pizza_func, index) => {
+            var found = searchByFunctionName(pizza_func);
+            found.addEventListener("click", () => {
+                window.location.href = `/zine_code_my_life/food_pizza.html?spicy=${params.spicy}&durian=${params.durian}&pizza=${index}`;
+            });
+        })
+        
+    })
+</script>
