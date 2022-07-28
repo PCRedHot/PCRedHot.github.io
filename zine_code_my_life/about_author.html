@@ -3,14 +3,32 @@
 
 <script type="module">
     window.addEventListener('load', function () {
-        var found = searchByFunctionName("click_to_visit_goofy_image");
-        found.addEventListener("click", () => {
-            window.open('https://pcredhot.github.io/zine_code_my_life/goofy.jpg', '_blank')
-        });
+        if (false){
+            var found = searchByFunctionName("click_to_visit_goofy_image");
+            found.addEventListener("click", () => {
+                window.open('https://pcredhot.github.io/zine_code_my_life/goofy/goofy.jpg', '_blank');
+            });
+        }
+        
+        const total_goofy = 1;
 
+        var found = searchByFunctionName('click_to_visit_goofy_image');
+        found.addEventListener("click", () => {
+            var elem = document.getElementById('goofy');
+            if (elem == null) {
+                var elem = document.createElement('div');
+                elem.id = 'goofy';
+                document.body.appendChild(elem);
+            }
+            
+            var n = Math.floor(Math.random()*total_goofy);
+            elem.innerHTML = `<div style="width: 50%"><img style="width: 100%" src="https://pcredhot.github.io/zine_code_my_life/goofy/goofy${}.jpg" alt="Goofy"></div>`;
+            
+        });
+        
         var found = searchByFunctionName("\'https://avatars.githubusercontent.com/u/43814396?v=4\'");
         found.addEventListener("click", () => {
-            window.open('https://avatars.githubusercontent.com/u/43814396?v=4', '_blank')
+            window.open('https://avatars.githubusercontent.com/u/43814396?v=4', '_blank');
         });
 
         var found = searchByFunctionName("click_to_proceed");

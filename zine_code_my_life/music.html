@@ -12,18 +12,18 @@
         '2I0GqVo4ezonSOV8jSUURx', '5kRBzRZmZTXVg8okC7SJFZ', '3RZqYQExvfxee1o4xOfSMO', '19gsA9gZuo8wJQ86vX8zyg',
         '2Ck9vuAuwKHfDvzhg5QTiW', '0wayAVszKYpoJjdyBzP9dh', '1QyL19OguM05XUCUHI9Sge', '5DF6cGqnT7L9dcCr0iLBkU',
         '4KLUw6B7ttpbjWxme2I5ju', '5GfMbmqPMjS6Mmc3zDthPB', '3pCgIUkmRHKydu9HE03QKY', '3dP0pLbg9OfVwssDjp9aT0'
-        ]
+        ];
         var found = searchByFunctionName('click_to_listen_a_random_fav_song');
         found.addEventListener("click", () => {
-            var elem = document.getElementById('spotify-song')
+            var elem = document.getElementById('spotify-song');
             if (elem == null) {
                 var elem = document.createElement('div');
-                elem.id = 'spotify-song'
+                elem.id = 'spotify-song';
                 document.body.appendChild(elem);
             }
             
             var song_id = song_list[Math.floor(Math.random()*song_list.length)];
-            elem.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/${song_id}?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`
+            elem.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/${song_id}?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
             
         });
         
