@@ -3,8 +3,17 @@
 
 <script type="module">
     window.addEventListener('load', function () {
-        var found = searchByFunctionName("click_to_go_back");
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
 
+        var found = searchByFunctionName("click_to_send_parry_email");
+        found.addEventListener("click", () => {
+            window.open("mailto:parrychoi1109@gmail.com?"+
+            `"subject=Zine Friend&body=Secret Code to Parry: ${params.spicy} ${params.durian} ${params.pizza}<br>Let\'s be friend :)`)
+        });
+
+
+        var found = searchByFunctionName("click_to_go_back");
         found.addEventListener("click", () => {
             window.location.href = '/zine_code_my_life/index.html';
         });

@@ -3,6 +3,9 @@
 
 <script type="module">
     window.addEventListener('load', function () {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+
         const song_list = [
         '3gxA31iAdIxToSS1uysNWk', '6dV6E9x0YsmRweAB4QUPhd', '7pQ35HVq4uQYeREyHxFN0j', '1NIwAnFhzZLqvDRVERfRFY',
         '22jikE8F9Ijg5B7dtLHjU0', '5Mg4jtsrw6DVRXApAhQm7j', '0tLF8VofowqaRmt81IDuPj', '2OCVguU5hOXRnGxb1cWA8V',
@@ -26,7 +29,7 @@
         
         var found = searchByFunctionName('click_to_proceed');
         found.addEventListener("click", () => {
-            window.location.href = `/zine_code_my_life/be_friend.html`;
+            window.location.href = `/zine_code_my_life/be_friend.html?spicy=${params.spicy}&durian=${params.durian}&pizza=${params.pizza}`;
         });
 
         

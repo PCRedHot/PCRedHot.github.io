@@ -13,7 +13,7 @@
             'The next tamjai I will try 4 mild',
             'Is 3 mild spicy? :x',
             '2 mild seems too much for me',
-            'For one time I don\'t know there are 4,3,2 mild, I directly jump to mild. I was dying :(',
+            'For one time I don\'t know there are 4,3,2 mild, \nI directly jump to mild. I was dying :(',
             'moderate is god to me already',
             'hope you are ok, cuz I am definitely not ok with hot level',
             'extra hot ... I want to see you eat that',
@@ -42,7 +42,7 @@
         
         var found = searchByFunctionName('click_to_proceed');
         found.addEventListener("click", () => {
-            window.location.href = `/zine_code_my_life/music.html`;
+            window.location.href = `/zine_code_my_life/music.html?spicy=${params.spicy}&durian=${params.durian}&pizza=${params.pizza}`;
         });
         
     })
