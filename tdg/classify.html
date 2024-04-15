@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TDG Redirect</title>
+  <meta charset="UTF-8" />
+  <meta id='link1' http-equiv="refresh" content="2;" />
+</head>
+
+<body>
+  <p>Redirecting you to the page. If you are not redirected within 2 seconds, click <a id='link2' href="">here</a> to go
+    to the target homepage.</p>
+</body>
+
+<script src="./url.js"></script>
+
+<script>
+  document.getElementById('link1').setAttribute('content', `2; URL=${classify_url}`);
+  document.getElementById('link2').setAttribute('href', classify_url);
+</script>
+
+
+</html>
