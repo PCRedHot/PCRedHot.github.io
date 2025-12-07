@@ -1,0 +1,3 @@
+[submodule "cluedo"]
+	path = cluedo
+	url = https://github.com/PCRedHot/clue-sheet.git
